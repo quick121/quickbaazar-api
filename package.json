@@ -1,0 +1,11 @@
+{
+  "name": "quickbaazar-api",
+  "version": "1.0.0",
+  "description": "api for quickbaazar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bhaskarsahni",
+  "license": "ISC"
+}
