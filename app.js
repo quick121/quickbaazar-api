@@ -22,9 +22,9 @@ app.use(express.urlencoded({extended:true}))
 app.use(API)
 
 
-app.get("/",(req,res)=>{
-    res.send("welcome")
-})
+// app.get("/",(req,res)=>{
+//     res.send("welcome")
+// })
 
 
 app.listen(PORT,(err)=>{
