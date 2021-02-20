@@ -1,15 +1,17 @@
 const router = require('express').Router();
-// const { signup } = require("../../../services/auth");
-const { InsertDal } = require("../../../../services/dalServices");
-
 const aws = require('aws-sdk')
 const multerS3 = require('multer-s3')
 const multer = require('multer')
+const dotenv = require("dotenv")
+// const { signup } = require("../../../services/auth");
+const { InsertDal } = require("../../../../services/dalServices");
+
+dotenv.config({ path: "config/.env" })
 
 const s3 = new aws.S3({
-    accessKeyId: 'AKIAI3BOZD2X2N7G3FQQ',
-    secretAccessKey: '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',
-    region: 'ap-south-1'
+    accessKeyId: `${process.env.AccessKeyId}`,
+    secretAccessKey: `${process.env.SecretAccessKey}`,
+    region: `${process.env.Region}`
 })
 
 const fileFilter = (req, file, cb) => {

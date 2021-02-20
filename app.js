@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const Cors = require("cors")
 const API = require("./routes/index")
 //Load Config
-dotenv.config({path:"config/config.env"})
+dotenv.config({ path: "config/.env" })
 
 const PORT = process.env.PORT || 5000
 const app = express();
@@ -33,3 +33,5 @@ if(err){
 }
 console.log(`Server Running in:${process.env.NODE_ENV} and PORT:${PORT}`);
 })
+
+module.exports = app

@@ -20,7 +20,7 @@ module.exports = {
             })
         } catch (err) {
             res.send({
-                statusCode: 500,
+                statusCode: 501,
                 msg: "Bad request",
                 err: JSON.parse(JSON.stringify(err))
             })
