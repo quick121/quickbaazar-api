@@ -1,6 +1,6 @@
-// const listFlour = require('./listFlour');
+const listFlour = require('./listFlour');
 const insertFlour = require('./insertFlour');
 
 
 
-module.exports = [insertFlour]
+module.exports = [insertFlour, listFlour]
