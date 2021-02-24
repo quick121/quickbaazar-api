@@ -29,7 +29,7 @@ app.use(API)
 
 app.listen(PORT,(err)=>{
 if(err){
-    console.log(`Server not Running:${err}`);
+    console.log(`Server not Running: ${err}`);
 }
 console.log(`Server Running in:${process.env.NODE_ENV} and PORT:${PORT}`);
 })
